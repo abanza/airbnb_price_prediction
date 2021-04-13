@@ -24,10 +24,10 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
 from sklearn import metrics
-from sklearn.datasets.samples_generator import make_blobs
+from sklearn.datasets import make_blobs
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import label
+from sklearn.preprocessing import LabelEncoder  # label
 from pickle import load
 from custom_classes import encode_categorical
 from custom_classes import prep_for_keras_input
